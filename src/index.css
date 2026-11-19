@@ -34,8 +34,28 @@
 .filter-row {
   margin-bottom: 12px;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   align-items: center;
+}
+
+.grade-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+
+.grade-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.grade-bar {
+  display: inline-block;
+  height: 10px;
+  background-color: #1976d2;
 }
 
 table {
@@ -52,6 +72,10 @@ td {
 
 tr.row-fail {
   color: #c62828;
+}
+
+.table-actions {
+  margin-top: 12px;
 }
 
 .form-field {

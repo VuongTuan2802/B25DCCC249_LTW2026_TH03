@@ -19,10 +19,9 @@ const coursesSlice = createSlice({
     },
     setScore: (state, action) => {
       const { id, score } = action.payload;
-      const targetCourse = state.find((item) => item.id === id);
-      if (targetCourse) {
-        targetCourse.score = score;
-      }
+      return state.map((item) =>
+        item.id === id ? { ...item, score } : item
+      );
     },
   },
 });

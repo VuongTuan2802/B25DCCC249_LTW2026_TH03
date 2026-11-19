@@ -1,16 +1,33 @@
 .app {
-  max-width: 960px;
-  margin: 0 auto;
+  min-height: 100vh;
   padding: 24px;
   font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.app.light {
+  background-color: #ffffff;
+  color: #18212c;
+}
+
+.app.dark {
+  background-color: #1f2430;
+  color: #e8eaf0;
+}
+
+.page-header {
+  max-width: 960px;
+  margin: 0 auto 20px;
 }
 
 .stats-box,
 .table-box,
-.form-box {
-  margin-bottom: 24px;
+.form-box,
+.goal-box {
+  max-width: 960px;
+  margin: 0 auto 24px;
   padding: 16px;
-  border: 1px solid #ddd;
+  border: 1px solid #8884;
   border-radius: 6px;
 }
 
@@ -28,7 +45,7 @@ table {
 
 th,
 td {
-  border: 1px solid #ccc;
+  border: 1px solid #8886;
   padding: 8px;
   text-align: left;
 }
@@ -48,4 +65,14 @@ tr.row-fail {
   color: #c62828;
   margin: 4px 0 0;
   font-size: 0.9rem;
+}
+
+.notice-banner {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 10px 16px;
+  background-color: #2e7d32;
+  color: #ffffff;
+  font-weight: 500;
 }
